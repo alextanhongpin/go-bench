@@ -1,0 +1,30 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/alextanhongpin/go-bench/001-loop-vs-combine
+cpu: Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz
+BenchmarkValidateLoop3
+BenchmarkValidateLoop3-4       	165333772	         7.322 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateLoop5
+BenchmarkValidateLoop5-4       	100000000	        11.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateLoop10
+BenchmarkValidateLoop10-4      	54040832	        22.81 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateDepth3
+BenchmarkValidateDepth3-4      	83141224	        14.56 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateDepth5
+BenchmarkValidateDepth5-4      	52120104	        23.19 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateDepth10
+BenchmarkValidateDepth10-4     	25220332	        46.61 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateCombine3
+BenchmarkValidateCombine3-4    	128756986	         9.616 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateCombine5
+BenchmarkValidateCombine5-4    	78232676	        17.18 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidateCombine10
+BenchmarkValidateCombine10-4   	20812099	        53.75 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidatePlain3
+BenchmarkValidatePlain3-4      	1000000000	         0.3275 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidatePlain5
+BenchmarkValidatePlain5-4      	1000000000	         0.3317 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValidatePlain10
+BenchmarkValidatePlain10-4     	730427811	         2.114 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/alextanhongpin/go-bench/001-loop-vs-combine	15.801s
